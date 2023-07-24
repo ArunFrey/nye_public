@@ -3,11 +3,11 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) [![DOI](https://zenodo.org/badge/670193797.svg)](https://zenodo.org/badge/latestdoi/670193797)
 
 
-### Summary 
+## Summary 
 
 This repository contains the material, data, and code needed to reproduce the results in "Frey, A. 2023. 'On the effect of the New Year's sexual assaults on anti-refugee violence: A rejoinder to *NAME* (2023)', *European Sociological Review*.". 
 
-### Setup
+## Setup
 
 #### Install packages
 Run this code once to install all the necessary packages: 
@@ -27,8 +27,7 @@ Running under: macOS Monterey 12.2.1
 
 All code configurations are specified in `config.yaml`.
 
-### Run
-
+## Run
 
 #### Generate data
 
@@ -61,7 +60,7 @@ To generate the Regression-Discontinuity-in-Time models, run:
 src/analysis/rdit.R
 ```
 
-#### Folder structure
+## Folder structure
 ```
 ├── LICENSE
 ├── README.md
