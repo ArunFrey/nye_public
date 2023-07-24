@@ -1,6 +1,6 @@
 # Reproductive material for "On the effect of the New Year’s Eve sexual assaults on anti-refugee violence"
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) [![DOI](https://zenodo.org/badge/670193797.svg)](https://zenodo.org/badge/latestdoi/670193797)
 
 
 ### Summary 
