@@ -1,10 +1,10 @@
 cff-version: 1.0.0
 message: "If you use this repository, please cite it as below."
 authors:
-  - family-names: Frey
-    given-names: Arun
-    orcid: https://orcid.org/0000-0002-5044-1432
+  - family-names: "Frey"
+    given-names: "Arun"
+    orcid: "https://orcid.org/0000-0002-5044-1432"
 title: "Replication material for "On the effect of the New Year’s Eve sexual assaults on anti-refugee violence"
 version: 0.0.1
-doi: 10.5281/zenodo.8178680
+doi: "10.5281/zenodo.8178680"
 date-released: 2023-07-24
