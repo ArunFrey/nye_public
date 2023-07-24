@@ -1,25 +1,29 @@
 # misc
 .DS_Store
 
-
 # writing
 logs/*
 paper/*
 
 # plots
 output/plots/*
-
+!output/plots/main/.gitkeep
 
 # tables
 output/tables/*
+!output/tables/.gitkeep
 
 
 # data
 data/interim/*
+!data/interim/.gitkeep
+
 data/processed/*
+!data/processed/.gitkeep
 
 # temporary files
 tmp/*
+
 
 # History files
 .Rhistory
