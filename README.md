@@ -1,5 +1,8 @@
 # Reproductive material for "On the effect of the New Year’s Eve sexual assaults on anti-refugee violence"
 
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
+
 ### Summary 
 
 This repository contains the material, data, and code needed to reproduce the results in "Frey, A. 2023. 'On the effect of the New Year's sexual assaults on anti-refugee violence: A rejoinder to NAME (2023)', *European Sociological Review*.". 
