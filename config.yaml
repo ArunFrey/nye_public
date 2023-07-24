@@ -1,0 +1,75 @@
+# YAML file
+
+
+output: 
+  plots: 'output/plots/'
+  tables: 'output/tables/'
+
+vars: 
+  dvs: ['attacks_s', 'attacks_s_nogov', 'attacks_s_shelt']
+
+data_config:
+
+  shp:
+    input: 'data/raw/shp/simplified/'
+    districts_to_group: [['06611', '06633'], ['12052', '12071'], ['03152', '03159'], ['03156', '03159']]
+    distance_from: "05315"
+    output: 'data/processed/ger.shp'
+
+  attacks:
+    input: ['data/raw/kleineanfragen/', 'data/raw/scraped/']
+    years: [2014, 2015, 2016]
+    stored_addresses: "data/interim/located-places.csv"
+    output: 'data/processed/attacks.csv'
+    
+  district:
+    input: 'data/raw/district/'
+    output: 'data/processed/district.csv'
+    impute: 
+      vars: "^for_|^ss_" # variables that start with for_ or ss_
+      districts: ["10041", "10042", "10043", "10044", "10045", "10046"]
+      state: "10"
+      years: [2013, 2014, 2015, 2016]
+    districts_to_group: [['06611', '06633'], ['12052', '12071']]
+    districts_to_drop:  [
+    "03152", "03156",
+    "05354",
+    "13001", "13002", "13005", "13006", "13051", "13052", "13053", "13054", "13055",
+    "13056", "13057", "13058", "13059", "13060", "13061", "13062",
+    "14161", "14166", "14167", "14171", "14173", "14177", "14178", "14181", "14182",
+    "14188", "14191", "14193", "14262", "14263", "14264", "14272", "14280",
+    "14284", "14285", "14286", "14287", "14290", "14292", "14365", "14374",
+    "14375", "14379", "14383", "14389",
+    "15101", "15151", "15153", "15154", "15159", "15171", "15202", "15256",
+    "15260", "15261", "15265", "15266", "15268", "15303", "15352", "15355",
+    "15357", "15358", "15362", "15363", "15364", "15367", "15369", "15370"]
+  
+  district_date: 
+    interpolate:
+      district:
+        input: 'data/raw/district/foreigners+asyl_13-16.csv'
+        var: 'ss_total'
+      country:
+        input: 'data/raw/country/easy.csv'
+        var: 'easy_registration'
+    output: 'data/processed/district_date.csv'
+
+  district_attack_date: 
+    output: 'data/processed/district_attack_date.csv'
+    output_stata: 'data/processed/district_attack_date.dta'
+    diffusion:
+      diffusion_lag_start: 8
+      diffusion_lag_end: 28
+    hostility: 
+      years: ["2014", "2015"]
+      cutoff: 0.9
+      
+  events: [["Col", "2015-12-31"], ["Brussels_14", "2014-05-24"], 
+  ["Paris_Jan_15", "2015-01-07"], ["Copenhagen_15", "2015-02-14"], 
+  ["Paris_Apr_15", "2015-04-19"], ["StQuent_15", "2015-06-26"], 
+  ["Paris_Nov_15", "2015-11-13"], ["Brussels_16", "2016-03-22"],
+  ["Magnanville_16", "2016-06-13"], ["Nice_16", "2016-07-14"],
+  ["StEtienne_16", "2016-07-26"], ["Berlin_16", "2016-12-19"],
+  ["Berlin_15", "2015-09-17"], ["Essen_16", "2016-04-16"],
+  ["Wuerzburg_16", "2016-07-18"]]
+  
