@@ -76,7 +76,6 @@ src/analysis/rdit.R
 ├── nye.Rproj
 ├── output
 │   ├── plots
-│   │   └── main
 │   └── tables
 ├── src
 │   ├── analysis
