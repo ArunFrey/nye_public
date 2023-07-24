@@ -5,7 +5,7 @@
 
 ### Summary 
 
-This repository contains the material, data, and code needed to reproduce the results in "Frey, A. 2023. 'On the effect of the New Year's sexual assaults on anti-refugee violence: A rejoinder to NAME (2023)', *European Sociological Review*.". 
+This repository contains the material, data, and code needed to reproduce the results in "Frey, A. 2023. 'On the effect of the New Year's sexual assaults on anti-refugee violence: A rejoinder to *NAME* (2023)', *European Sociological Review*.". 
 
 ### Setup
 
