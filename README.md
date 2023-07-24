@@ -40,7 +40,7 @@ This will generate a clean dataset, and save it in `data/processed/district_atta
 
 #### Reproduce analysis
 
-To generate the models, execute the following Stata file: 
+To generate the models, open `src/analysis/analysis.do`, set your working directory at `"path-to-repo"` to the repository folder, and then run the following file: 
 
 ```
 src/analysis/analysis.do

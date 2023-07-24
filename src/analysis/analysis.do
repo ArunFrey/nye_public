@@ -2,7 +2,7 @@
 * PURPOSE: MULTILEVEL MODELING + PREDICTIONS IN STATA *
 *******************************************************
 
-cd "/Users/arunfrey/Documents/04_projects/01_current/nye_public/"
+cd "path-to-repo"
 
 *ssc install estout, replace
 *ssc install combomarginsplot, replace
@@ -272,8 +272,8 @@ foreach y in attacks_s attacks_s_shelt attacks_s_nogov  {
 	plot1opts(lpattern("1") lcolor(black)) ///
 	plot2opts(lpattern("1") lcolor(black))
 	
-	graph save output/plots/main/m4_`y', replace
-	graph export output/plots/main/m4_`y'.pdf, replace
+	graph save output/plots/m4_`y', replace
+	graph export output/plots/m4_`y'.pdf, replace
 
 	* Hostility plot
 	est restore m5_`y'
@@ -305,8 +305,8 @@ foreach y in attacks_s attacks_s_shelt attacks_s_nogov  {
 	plot3opts(lpattern("shortdash") lcolor(black)) ///
 	plot4opts(lpattern("shortdash") lcolor(black)) 
 	
-	graph save output/plots/main/m5_`y', replace
-	graph export output/plots/main/m5_`y'.pdf, replace
+	graph save output/plots/m5_`y', replace
+	graph export output/plots/m5_`y'.pdf, replace
 
 	* NPD Plot
 	est restore m7_`y'
@@ -324,8 +324,8 @@ foreach y in attacks_s attacks_s_shelt attacks_s_nogov  {
 	legend(off) ///
 	addplot(hist npd14, yaxis(2) color(gs11%30) lcolor(gs8%80)) 
 
-	graph save output/plots/main/m7_`y', replace
-	graph export output/plots/main/m7_`y'.pdf, replace
+	graph save output/plots/m7_`y', replace
+	graph export output/plots/m7_`y'.pdf, replace
 	
 	timer off 1
 	timer list 1
