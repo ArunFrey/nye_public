@@ -7,7 +7,9 @@ paper/*
 
 # plots
 output/plots/*
+!output/plots/.gitkeep
 !output/plots/main/.gitkeep
+
 
 # tables
 output/tables/*
